@@ -169,3 +169,6 @@ async function cargarExamenes() {
         console.error("Error al cargar los exámenes:", error);
     }
 }
+
+
+const socket = io();
