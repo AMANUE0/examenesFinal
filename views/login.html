@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/6788e71a64.js" crossorigin="anonymous"></script>
+    <title>Login | NODEJS</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            background-color: #333232;
+            font-family: sans-serif;
+
+        }
+        form {
+            display: flex;
+            background-color: #1F1E1E;
+            flex-direction: column;
+            width: 90%;
+            max-width: 500px;
+            height: 350px;
+            margin: 100px auto;
+            border-radius: 25px;
+            box-shadow: 0 3px 10px #000000c5;
+            position: relative;
+        }
+        form > h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #DBDBDB;
+            margin: 40px auto;
+            
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 50px;
+            background-color: #9494941e;
+            border: 0;
+            color: white;
+            outline: none;
+        }
+
+        label {
+            font-size: small;
+            color: #9b9a9a;
+            margin: 0 25px;
+        }
+
+        input:focus {
+
+        }
+        .icon {
+            position: absolute;
+            left: 50%;
+            top: -40px;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(40deg, #644CF2, #EA4EFE);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border: 5px solid #1F1E1E;
+            box-shadow: 0 -1px 4px black;
+        }
+
+        button {
+            background-color: #9b9a9a;
+            border: 0;
+            padding: 20px;
+            margin: 0 auto;
+            width: 250px;
+            border-radius: 100px;
+            color: white;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #585858;
+        }
+        .enlaces {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        a {
+            margin: 7px 25px;
+            font-size: small;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+        <h2>Iniciar sesión</h2>
+        <label for="nombre">Usuario *</label>
+        <input id="username" type="text" name="nombre" placeholder="Ingresa tu nombre de usuario" required>
+        <label for="contraseña">Contraseña *</label>
+        <input id="password" type="password" name="contraseña" placeholder="Ingresa tu contraseña" required>
+        <div class="enlaces">
+            <a href="/register">¿No tienes una cuenta?</a>
+            <a href="/password">¿Se te olvido la contraseña?</a>
+        </div>
+        <button  id="login">Acceso</button>
+    </form>
+
+    <script>
+        let login = document.getElementById('login');
+        login.addEventListener('click', (e) => {
+            e.preventDefault() // evita que la pagina se recarge
+            fetch('/admin/usuarios')
+        .then(res => res.json())
+        .then(data => {
+            const usuarioIngresado = document.getElementById('username').value;
+            const contraseñaIngresada = document.getElementById('password').value;
+            
+            const usuarioEncontrado = data.find(usuario => {
+                return usuario.nombre === usuarioIngresado && usuario.contraseña === contraseñaIngresada
+            });
+
+            if (usuarioEncontrado) {
+                alert("Usuario encontrado");
+                window.location.href = "/admin";
+                localStorage.setItem("username", usuarioIngresado);
+            }
+            else {
+                alert("Usuario no encontrado");
+            }
+        }).catch(err => {
+            console.log("Error al obtener usuarios", err);
+            alert("Error al intentar iniciar sesion");
+        })
+        });
+        
+    </script>
+</body>
+</html>

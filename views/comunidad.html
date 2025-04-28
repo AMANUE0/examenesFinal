@@ -1,0 +1,38 @@
+<!-- views/contacto.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="./css/comunidad.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/6788e71a64.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Comunidad</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <h1>TC</h1>
+      <nav>
+        <a href="/">Inicio</a>
+        <button class="btn-header btn-agregar-opinion">Agregar opinión</button>
+      </nav>
+    </header>
+    <!-- Opiniones de la comunidad -->
+    <main class="opiniones-comunidad"></main>
+    <!-- form -->
+
+    <dialog>
+      <form action="/comunidad" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+        <button type="button" class="btn-cerrar-form">Cancelar</button>
+      </form>
+    </dialog>
+    <script src="./JS/comunidad.js"></script>
+  </body>
+</html>

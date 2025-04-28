@@ -1,0 +1,71 @@
+<!-- NO TOCAR ESTE ARCHIVO -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/panel.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header>
+        <nav>
+          <section class="opciones-panel">
+            <button class="btn-panel-opction btn-crear-examen">
+              Crear examen
+            </button>
+            <button class="btn-panel-opction btn-admin-examen">
+              Administrar examenes
+            </button>
+            <button class="btn-panel-opction btn-stats-examen">
+              Stats examenes
+            </button>
+          </section>
+        </nav>
+      </header>
+    </main>
+
+    <div id="examenes">
+      <!--  -->
+    </div>
+    <!-- Formulario crear examen NO BORRAR  -->
+    <form action="/panel" method="POST">
+      <h2>Formula las preguntas</h2>
+      <p>Examen: %examen%</p>
+      <label for="pregunta">Formula tu pregunta</label>
+      <input type="text" name="pregunta" placeholder="Formula tu pregunta" />
+      <label for="respuestaCorrecta">Respuesta correcta</label>
+      <input
+        type="text"
+        name="respuestaCorrecta"
+        placeholder="Escribe la respuesta correcta"
+      />
+      <label for="respuestaErronea_1">Respuesta erronea 1</label>
+      <input
+        type="text"
+        name="respuestaErronea_1"
+        placeholder="Escribe respuesta erronea 1"
+      />
+      <label for="respuestaErronea_2">Respuesta erronea 2</label>
+      <input
+        type="text"
+        name="respuestaErronea_2"
+        placeholder="Escribe respuesta erronea 2"
+      />
+      <label for="respuestaErronea_3">Respuesta erronea 3</label>
+      <input
+        type="text"
+        name="respuestaErronea_3"
+        placeholder="Escribe respuesta erronea 3"
+      />
+      <p>%preguntas_creadas% preguntas creadas</p>
+      <button type="submit" id="crearP">Agregar pregunta</button>
+      <button class="btn-cerrar-form">Cerrar</button>
+    </form>
+    <!--  NO BORRAR-->
+    <script src="./JS/panel.js"></script>
+  </body>
+</html>

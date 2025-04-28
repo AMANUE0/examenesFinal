@@ -1,0 +1,79 @@
+<!-- views/admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h1>Panel de Administración</h1>
+  <div id="messages-container">
+    <h1>Mensajes de contacto recibidos</h1>
+    <!-- Los mensajes se llenarán con JavaScript -->
+  </div>
+
+  <div id="users">
+    <h1>Usuarios registrados en la pagina</h1>
+    <!-- Usuarios registrados -->
+  </div>
+  <script>
+    fetch('/admin/usuarios')
+    .then(res => res.json())
+    .then(data => console.log(data));
+    // Fetch usuarios desde la API
+    fetch('/admin/usuarios')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('users');
+        data.forEach((usuario, index) => {
+          const userElement = document.createElement('div');
+          userElement.classList.add('user');
+          userElement.innerHTML = `
+            <p><strong>Nombre:</strong> ${usuario.nombre}</p>
+            <p><strong>Email:</strong> ${usuario.email}</p>
+            <p><strong>Fecha:</strong> ${usuario.fecha}</p>
+            <p><strong>contraseña:</strong> ${usuario.contraseña}</p>
+            <button onclick="eliminarMensaje(${index})">Eliminar</button>
+            <hr>
+          `;
+          container.appendChild(userElement);
+        })
+      })
+    // Fetch mensajes desde la API
+    fetch('/admin/mensajes')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('messages-container');
+        data.forEach((mensaje, index) => {
+          const messageElement = document.createElement('div');
+          messageElement.classList.add('message');
+          messageElement.innerHTML = `
+            <p><strong>Nombre:</strong> ${mensaje.nombre}</p>
+            <p><strong>Email:</strong> ${mensaje.email}</p>
+            <p><strong>Mensaje:</strong> ${mensaje.mensaje}</p>
+            <p><strong>Fecha:</strong> ${mensaje.fecha}</p>
+            <button onclick="eliminarMensaje(${index})">Eliminar</button>
+            <hr>
+          `;
+          container.appendChild(messageElement);
+        });
+      });
+
+    // Función para eliminar el mensaje
+    function eliminarMensaje(index) {
+      fetch('/admin/mensajes', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ index })
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert('Mensaje eliminado!');
+        location.reload(); // Recargar la página para reflejar los cambios
+      });
+    }
+  </script>
+</body>
+</html>

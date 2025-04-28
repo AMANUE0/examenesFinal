@@ -1,0 +1,10 @@
+[
+  {
+    "nombre": "biologia",
+    "archivo": "biologia.json"
+  },
+  {
+    "nombre": "fisica",
+    "archivo": "fisica.json"
+  }
+]

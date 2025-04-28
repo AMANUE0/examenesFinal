@@ -1,0 +1,21 @@
+{
+  "name": "examenes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Manuel/Mario",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.11",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  },
+  "description": "Pagina de examenes hecho para el grupo 417",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}

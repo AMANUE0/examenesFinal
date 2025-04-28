@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen de Física</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .volver-btn {
+        background-color: #4caf50; /* Un color verde */
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .pregunta-indicador {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #777;
+      }
+
+      .pregunta-indicador span {
+        font-weight: bold;
+      }
+
+      .tema {
+        color: #333;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+
+      .pregunta-texto {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .opciones label {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .opciones label:hover {
+        background-color: #f9f9f9;
+      }
+
+      .opciones input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .navegacion {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .navegacion button {
+        background-color: #eee;
+        color: #333;
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .navegacion button:hover {
+        background-color: #ddd;
+      }
+
+      .calificacion {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content">
+      <button class="volver-btn">Volver</button>
+      <div class="pregunta-indicador">
+        <span
+          >Pregunta <span id="pregunta-numero">1</span> de
+          <span id="total-preguntas"></span
+        ></span>
+        <span><span id="porcentaje-completado">0%</span> completado</span>
+      </div>
+      <div class="tema">Tema: Estructuras de control</div>
+      <div class="examen"></div>
+      <div class="navegacion">
+        <button id="anterior-btn" disabled>Anterior</button>
+        <button id="siguiente-btn">Siguiente</button>
+      </div>
+      <div class="calificacion" id="calificacion"></div>
+    </main>
+    <script>
+      fetch("/examenes/fisica.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const preguntas = data.preguntas;
+          const examenContenedor = document.querySelector(".examen");
+          const preguntaNumeroSpan = document.getElementById("pregunta-numero");
+          const totalPreguntasSpan = document.getElementById("total-preguntas");
+          const porcentajeCompletadoSpan = document.getElementById(
+            "porcentaje-completado",
+          );
+          const calificacionSpan = document.getElementById("calificacion");
+          const anteriorBtn = document.getElementById("anterior-btn");
+          const siguienteBtn = document.getElementById("siguiente-btn");
+
+          let preguntaActual = 0;
+          let respuestas = [];
+
+          totalPreguntasSpan.textContent = preguntas.length;
+
+          // Mostrar la pregunta actual
+          function mostrarPregunta() {
+            const pregunta = preguntas[preguntaActual];
+            examenContenedor.innerHTML = `
+                        <p class="pregunta-texto">${pregunta.pregunta}</p>
+                        <div class="opciones">
+                            <label>
+                                <input type="radio" name="pregunta-${preguntaActual}" value="${pregunta.respuestaCorrecta}">
+                                ${pregunta.respuestaCorrecta}
+                            </label>
+                            <label>
+                                <input type="radio" name="pregunta-${preguntaActual}" value="${pregunta.respuestaErronea_1}">
+                                ${pregunta.respuestaErronea_1}
+                            </label>
+                            <label>
+                                <input type="radio" name="pregunta-${preguntaActual}" value="${pregunta.respuestaErronea_2}">
+                                ${pregunta.respuestaErronea_2}
+                            </label>
+                            <label>
+                                <input type="radio" name="pregunta-${preguntaActual}" value="${pregunta.respuestaErronea_3}">
+                                ${pregunta.respuestaErronea_3}
+                            </label>
+                        </div>
+                    `;
+            preguntaNumeroSpan.textContent = preguntaActual + 1;
+
+            // Habilitar/deshabilitar los botones según la pregunta actual
+            anteriorBtn.disabled = preguntaActual === 0;
+            siguienteBtn.disabled = preguntaActual === preguntas.length - 1;
+
+            // Calcular porcentaje completado
+            const completado = Math.round(
+              ((preguntaActual + 1) / preguntas.length) * 100,
+            );
+            porcentajeCompletadoSpan.textContent = `${completado}%`;
+          }
+
+          // Calificar el examen
+          function calificar() {
+            let aciertos = 0;
+
+            preguntas.forEach((pregunta, index) => {
+              const respuestaSeleccionada = document.querySelector(
+                `input[name="pregunta-${index}"]:checked`,
+              );
+              if (
+                respuestaSeleccionada &&
+                respuestaSeleccionada.value === pregunta.respuestaCorrecta
+              ) {
+                aciertos++;
+              }
+            });
+
+            const porcentajeAciertos = Math.round(
+              (aciertos / preguntas.length) * 100,
+            );
+            calificacionSpan.textContent = `Calificación: ${porcentajeAciertos}%`;
+          }
+
+          // Manejadores de eventos
+          anteriorBtn.addEventListener("click", () => {
+            if (preguntaActual > 0) {
+              preguntaActual--;
+              mostrarPregunta();
+            }
+          });
+
+          siguienteBtn.addEventListener("click", () => {
+            if (preguntaActual < preguntas.length - 1) {
+              preguntaActual++;
+              mostrarPregunta();
+            } else {
+              calificar(); // Al finalizar, calificar el examen
+            }
+          });
+
+          // Mostrar la primera pregunta al cargar la página
+          mostrarPregunta();
+        });
+    </script>
+  </body>
+</html>

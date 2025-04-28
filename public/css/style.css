@@ -1,0 +1,485 @@
+/*Variables para el modo oscuro / claro*/
+:root {
+  --color: #333333;
+  --bg-1: white;
+  --bg-2: #c7c7c7;
+  --bg-3: #d4d4d4;
+  --bg-4: black;
+  --font: inter GOOGLE;
+}
+
+.dark-mode {
+  --color: white;
+  --bg-1: #1f1e1e;
+  --bg-2: #333232;
+  --bg-3: #3b3b3b;
+  --bg-4: black;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-1) ;
+  color: var(--color);
+  font-family: var(--font);
+  margin: 0;
+  transition: background .5s, color .5s;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+/*Estilos globales para todos los elementos seleccionados de HTML*/
+
+header {
+  background-color: var(--bg-2);
+  color: var(--color);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: .5s;
+}
+header > section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.menu {
+  background-color: transparent;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.logo {
+  letter-spacing: -4px;
+  margin: 0 10px;
+}
+.nav-content {
+}
+.hidden-menu {
+  display: none;
+}
+.nav-bar {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  display: flex;
+  text-decoration: none;
+  color: #7a7a7a;
+  transition: .5s;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+
+}
+.nav-item:hover {
+  cursor: pointer;
+  color: #666464;
+}
+p {
+  color: #a5a4a4;
+  font-weight: bold;
+}
+
+/*EStilos globales para clase "content" y sus relaciones*/
+
+.content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/*EStilos globales para clase "hero"*/
+
+.hero {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero > div {
+  width: 700px;
+  text-align: center;
+}
+.hero > div > p {
+  margin: 10px 100px 40px;
+  font-size: 1.2rem;
+}
+
+.content-btns-hero {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.hero > div > h1 {
+  font-size: 2.5rem;
+}
+
+.btn-hero {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px black;
+  background-color: #222222;
+  transition: .5s ease;
+  border: none;
+}
+
+.btn-info {
+  color: black;
+  background-color: #EBEBEB;
+}
+.btn-hero:hover {
+  transform: scale(1.1);
+}
+
+.mas-reciente {
+  background: linear-gradient(180deg, #e509e5, #540a99);
+  position: relative;
+}
+
+/*Estilos para la seccion "portada introduccion" */
+
+.introduction-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/LinceNexus.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.introduction-page > h2 {
+  font-size: 2.1rem;
+}
+.introduction-page > p {
+  font-size: 1.2rem;
+}
+
+/*Estilos para la seccion "Informacion de la pagina" */
+
+
+.sections-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sections-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.section {
+  transition: .4s;
+}
+
+.section:hover {
+  transform: scale(1.1);
+}
+.section-asignatures {
+  width: 250px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-exams {
+  width: 500px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-resources {
+  width: 250px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-results {
+  width: 500px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img-section-1 {
+  width: 100%;
+  height: 250px;
+  background-image: url("/images/no-imagen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.img-section-2 {
+  width: 100%;
+  height: 250px;
+  background-image: url("/images/no-imagen.jpg");
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.img-section-3 {
+  width: 100%;
+  height: 250px;
+  background-image: url("/images/no-imagen.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.img-section-4 {
+  width: 100%;
+  height: 250px;
+  background-image: url("/images/no-imagen.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/*Estilos para la seccion "Creadores de la web" */
+
+.credits {
+  background-color: var(--bg-2);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.integrante {
+  width: 220px;
+  background-color: #7e7d7d52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0px 2px white;
+  transition: transform 0.3s ease-in-out, box-shadow 1s;
+
+}
+
+.integrante:hover {
+  transform: translateY(-5px);
+  animation: flotar 1s ease-in-out infinite alternate;
+
+}
+
+/*Estilamos el contenedor de cada integrante del equipo */
+
+
+.img-team {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-2);
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rol {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* Redes sociales */
+.redes {
+  margin: 10px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.red-social {
+  font-size: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  text-decoration: none;
+}
+
+
+/* Colores específicos */
+.ig { color: #E4405F; }
+.dc { color: #5865F2; }
+.yt { color: #FF0000; }
+
+
+/* Instagram - Degradado */
+.ig {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+}
+
+.ig:hover {
+  transform: scale(1.1);
+}
+
+/* Discord - Azul */
+.dc {
+  background-color: #5865F2;
+  color: white;
+}
+
+.dc:hover {
+  transform: scale(1.1);
+}
+
+/* YouTube - Rojo */
+.yt {
+  background-color: #FF0000;
+  color: white;
+}
+
+.yt:hover {
+  transform: scale(1.1);
+}
+.team-h3 {
+  text-align: center;
+  background-color: var(--bg-2);
+  padding: 10px;
+}
+
+.smoke-1 {
+  position: absolute;
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  width: 350px;
+  height: 250px;
+  background-color: whitesmoke;
+  opacity: .5;
+  filter: blur(100px);
+
+}
+
+.crown {
+  position: absolute;
+  top: 0;
+  transform: scale(1.4);
+}
+.osu {
+  width: 40px;
+  height: 40px;
+  background-color: #EC5F9E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  transform: scale(.9);
+  padding: 2px;
+  animation: osu .2s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > h3 {
+  font-size: 2.5rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "inter GOOGLE";
+  src: url('../fonts/inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@media only screen and (min-width: 800px) {
+  body {
+  }
+  .menu {display: none;}
+  header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .nav-content {
+      display: flex;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .content-btns-hero {
+      flex-direction: column;
+      margin: 15px 0;
+  }
+  .nav-bar {
+      flex-direction: column;
+  }
+  .nav-item {
+      background-color: var(--bg-3);
+  }
+  .hero-h1 {
+      transform: scale(.45);
+  }
+  .hero-p {
+      transform: scale(.7);
+  }
+}

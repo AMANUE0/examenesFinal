@@ -1,0 +1,243 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1E1E;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: relative;
+    background-color: #333232;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  
+  header > nav > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .header-option {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+  }
+  
+  
+  .header-option:hover {
+    cursor: pointer;
+    color: #c2c2c2;
+  }
+  
+ 
+ 
+  h1 {
+    margin: 0;
+  }
+  
+header > .light {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    filter: blur(100px);
+    width: 800px;
+    height: 300px;
+    background-color: #ffffff46;
+    z-index: -1;
+}
+
+header > h1 > a {
+    color: white;
+    text-decoration: none;
+}
+header > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body > .light {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    filter: blur(100px);
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff46;
+    z-index: -1;
+}
+.container {
+}
+.container > h1 {
+    margin: 50px;
+    font-size: 3.8rem;
+    text-align: center;
+    color: white;
+}
+.examen-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    box-shadow: 0 2px 5px #0000001a;
+    transition: transform 0.2s;
+}
+
+.examen-card:hover {
+    transform: translateY(-5px);
+}
+
+.examen-titulo {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.examen-info {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.active {
+    display: block;
+}
+
+.desactived {
+    display: none;
+}
+
+.tarjeta-pregunta {
+    background-color: #333232;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta-pregunta h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.opcion {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    background-color: #dcdcdc;
+}
+
+.volver-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exam-title {
+    color: white;
+}
+.result-h2 {
+    text-align: center;
+    color: white;
+}
+
+.aciertos {
+    text-align: center;
+    color: whi;
+}
+
+
+/* Tu CSS original aquí arriba, igualito */
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    header > nav > ul {
+      flex-direction: column;
+      gap: 10px;
+      width: auto;
+    }
+  
+    .examen-card {
+      width: 90%;
+      height: auto;
+    }
+  
+    .container > h1 {
+      font-size: 2.5rem;
+      margin: 30px 10px;
+    }
+  
+    .tarjeta-pregunta {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .volver-btn {
+      width: 90%;
+      margin: 20px auto;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header > h1 > a {
+      font-size: 1.8rem;
+    }
+  
+    .header-option {
+      font-size: 1rem;
+    }
+  
+    .examen-card {
+      padding: 15px;
+    }
+  
+    .tarjeta-pregunta h2 {
+      font-size: 16px;
+    }
+  
+    .opcion {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .volver-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

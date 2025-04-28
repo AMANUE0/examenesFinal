@@ -1,0 +1,313 @@
+{
+  "nombre": "Biologia",
+  "preguntas": [
+    {
+      "pregunta": "¿Por qué esta conformado el sistema óseo?",
+      "respuestaCorrecta": "Huesos, ligamentos y cartílagos",
+      "respuestaErronea_1": "Cartílagos",
+      "respuestaErronea_2": "Ligamentos",
+      "respuestaErronea_3": "ejido esponjoso"
+    },
+    {
+      "pregunta": "Tejido esponjoso",
+      "respuestaCorrecta": "Ligamentos",
+      "respuestaErronea_1": "Hueso",
+      "respuestaErronea_2": "Periostio",
+      "respuestaErronea_3": "Hueso"
+    },
+    {
+      "pregunta": "Tiene varias funciones como reducir la fricción entre huesos, o dar soporte a diferentes órganos para hacerlos mas funcionales, como la nariz",
+      "respuestaCorrecta": "Cartílago",
+      "respuestaErronea_1": "Medula ósea",
+      "respuestaErronea_2": "Epífisis",
+      "respuestaErronea_3": "Hueso compacto"
+    },
+    {
+      "pregunta": "¿Como está conformado el hueso?",
+      "respuestaCorrecta": "Epífisis, diáfisis y la línea de epífisis ",
+      "respuestaErronea_1": "Hueso compacto",
+      "respuestaErronea_2": "Medula ósea ",
+      "respuestaErronea_3": "Medula ósea "
+    },
+    {
+      "pregunta": "Cómo se les conoce a las células “albañiles” que tienen la función de formar el hueso?",
+      "respuestaCorrecta": "Osteoblastos",
+      "respuestaErronea_1": "Eucariotas",
+      "respuestaErronea_2": "Procariotas",
+      "respuestaErronea_3": "Óseos"
+    },
+    {
+      "pregunta": "¿Y las células que están constantemente destruyendo el hueso como se llaman?",
+      "respuestaCorrecta": "Osteoclastos",
+      "respuestaErronea_1": "Diáfisis",
+      "respuestaErronea_2": "Capilares",
+      "respuestaErronea_3": "Coaxiales"
+    },
+    {
+      "pregunta": "Existen algunos huesos que tienen forma de tubo hueco, como el fémur, por ejemplo. Estas cavidades contienen__________________, una sustancia blanda y esponjosa que funciona como un tipo de tejido conectivo",
+      "respuestaCorrecta": "Medula ósea ",
+      "respuestaErronea_1": "Hueso compacto",
+      "respuestaErronea_2": "Hueso esponjoso",
+      "respuestaErronea_3": "Células de la medula ósea"
+    },
+    {
+      "pregunta": "En donde se forman las células sanguíneas",
+      "respuestaCorrecta": "Medula ósea roja",
+      "respuestaErronea_1": "Medula ósea roja",
+      "respuestaErronea_2": "Hueso cortical ",
+      "respuestaErronea_3": "Hueso esponjoso"
+    },
+    {
+      "pregunta": "¿Como se organiza el sistema óseo?",
+      "respuestaCorrecta": "Esqueleto apendicular y esqueleto axial",
+      "respuestaErronea_1": "Esqueleto coaxial y esqueleto vertebral",
+      "respuestaErronea_2": "Esqueleto coaxial y esqueleto vertebral",
+      "respuestaErronea_3": "Sistema óseo"
+    },
+    {
+      "pregunta": "Es el eje vertical del cuerpo, esta formado por los huesos necesarios para mantener la verticalidad",
+      "respuestaCorrecta": "Esqueleto axial",
+      "respuestaErronea_1": "Esqueleto apendicular",
+      "respuestaErronea_2": "Sistema óseo",
+      "respuestaErronea_3": "Tejido conectivo elástico"
+    },
+    {
+      "pregunta": "Es el esqueleto de las articulaciones colgantes, como los hombros y los brazos",
+      "respuestaCorrecta": "a)\tEsqueleto apendicular",
+      "respuestaErronea_1": "b)\tEsqueleto axial",
+      "respuestaErronea_2": "c)\tSistema óseo",
+      "respuestaErronea_3": "d)\tTejido conectivo elástico"
+    },
+    {
+      "pregunta": "Están formados por un denso tejido de fibras de colágeno fuertemente empaquetadas y orientadas siempre a la misma dirección",
+      "respuestaCorrecta": "Ligamentos",
+      "respuestaErronea_1": "Cartílagos",
+      "respuestaErronea_2": "Articulaciones",
+      "respuestaErronea_3": "Sinoviales "
+    },
+    {
+      "pregunta": "Están hechas de fibras de colágeno para dar dureza y elasticidad, lo que brinda flexibilidad",
+      "respuestaCorrecta": "Cartílagos",
+      "respuestaErronea_1": "Articulaciones",
+      "respuestaErronea_2": "Ligamentos",
+      "respuestaErronea_3": "Vertebras "
+    },
+    {
+      "pregunta": "Son las uniones entre dos o más huesos. Algunas normalmente no se mueven",
+      "respuestaCorrecta": "Articulaciones",
+      "respuestaErronea_1": "Ligamentos",
+      "respuestaErronea_2": "Cartílagos",
+      "respuestaErronea_3": "Vertebras "
+    },
+    {
+      "pregunta": "Tipos de articulaciones",
+      "respuestaCorrecta": "Sinartrosis, anfiartrosis y sinoviales o diartrosis",
+      "respuestaErronea_1": "Cartílagos ",
+      "respuestaErronea_2": "Vertebras y diartrosis",
+      "respuestaErronea_3": "Sinartrosis y sinoviales"
+    },
+    {
+      "pregunta": "Es el estado donde los huesos se vuelven porosos",
+      "respuestaCorrecta": "Osteoporosis",
+      "respuestaErronea_1": "Osteoporosis",
+      "respuestaErronea_2": "Infecciones",
+      "respuestaErronea_3": "Infecciones"
+    },
+    {
+      "pregunta": "Las ________ Oseas pueden clasificarse como abiertas o cerradas",
+      "respuestaCorrecta": "Fracturas",
+      "respuestaErronea_1": "Osteomalacia",
+      "respuestaErronea_2": "Vertebras",
+      "respuestaErronea_3": "Partes"
+    },
+    {
+      "pregunta": "Es el principal responsable de cada movimiento de nuestro cuerpo",
+      "respuestaCorrecta": "Sistema muscular",
+      "respuestaErronea_1": "Sistema óseo",
+      "respuestaErronea_2": "Sistema linfático",
+      "respuestaErronea_3": "Sistema tegumentario"
+    },
+    {
+      "pregunta": "¿Cuales son los tres tipos de tejido muscular en el cuerpo?",
+      "respuestaCorrecta": "Esquelético, liso y cardiaco",
+      "respuestaErronea_1": "Fibras, hueso y cartílago",
+      "respuestaErronea_2": "Liso, musculo y cavidades",
+      "respuestaErronea_3": "Musculo, musculo elástico, fibras"
+    },
+    {
+      "pregunta": " Son contracciones musculares involuntarias sobre músculos esqueléticos que se mueven siempre de manera voluntaria",
+      "respuestaCorrecta": "Calambres",
+      "respuestaErronea_1": "Esquince",
+      "respuestaErronea_2": "Luxación",
+      "respuestaErronea_3": "Desgarre muscular "
+    },
+    {
+      "pregunta": "Se puede definir como un sobre estiramiento de los ligamentos articulares",
+      "respuestaCorrecta": "Esquince",
+      "respuestaErronea_1": "Calambres",
+      "respuestaErronea_2": "Luxación",
+      "respuestaErronea_3": "Desgarre muscular "
+    },
+    {
+      "pregunta": "Se define como una forma breve como la dislocación de una articulación, de manera que se produzca una perdida de contacto entre la estructura ósea y la superficie articular",
+      "respuestaCorrecta": "Luxación",
+      "respuestaErronea_1": "Desgarre muscular ",
+      "respuestaErronea_2": "Calambres",
+      "respuestaErronea_3": "Esquince"
+    },
+    {
+      "pregunta": "Es una lesión del musculo en donde las fibras que componen al musculo se rompen",
+      "respuestaCorrecta": "Desgarre muscular ",
+      "respuestaErronea_1": "Luxación",
+      "respuestaErronea_2": "Calambres",
+      "respuestaErronea_3": "Calambres"
+    },
+    {
+      "pregunta": " Es una enfermedad causada por una bacteria llamada clostridium tetani. Esta bacteria se moviliza por el sistema nervioso central",
+      "respuestaCorrecta": "Tétanos ",
+      "respuestaErronea_1": "Luxación",
+      "respuestaErronea_2": "Luxación",
+      "respuestaErronea_3": "Esquince"
+    },
+    {
+      "pregunta": "Es una enfermedad parecida al tétanos, causada por la infección de una bacteria clostridium botulinium que produce una toxina que ataca los nervios del organismo",
+      "respuestaCorrecta": "Botulismo",
+      "respuestaErronea_1": "Esquince",
+      "respuestaErronea_2": "Luxación",
+      "respuestaErronea_3": "Luxación"
+    },
+    {
+      "pregunta": "Es el órgano mas importante del cuerpo, es el limite que separa nuestro organismo del mundo exterior, es decir, es nuestra superficie externa",
+      "respuestaCorrecta": "Piel",
+      "respuestaErronea_1": "Hipodermis",
+      "respuestaErronea_2": "Cabello",
+      "respuestaErronea_3": "Venas"
+    },
+    {
+      "pregunta": "Cuales son las partes de la piel",
+      "respuestaCorrecta": "Epidermis, dermis e hipodermis",
+      "respuestaErronea_1": "Cabello, piel y dermis",
+      "respuestaErronea_2": "Uñas, piel y ligamentos",
+      "respuestaErronea_3": "Órganos, piel y células"
+    },
+    {
+      "pregunta": "Las células _____________ se sustituyen constantemente, sus células emergen del fondo de la capa epidérmica constantemente y sustituyen y empujan a las células viejas a la superficie",
+      "respuestaCorrecta": "Epidérmicas",
+      "respuestaErronea_1": "Dérmicas",
+      "respuestaErronea_2": "Eucariotas",
+      "respuestaErronea_3": "Sudoripas"
+    },
+    {
+      "pregunta": "La _____ es principalmente tejido denso formado por colágeno y fibras elásticas",
+      "respuestaCorrecta": "Dermis",
+      "respuestaErronea_1": "Epidérmicas",
+      "respuestaErronea_2": "Eucariotas",
+      "respuestaErronea_3": "Sudoripas"
+    },
+    {
+      "pregunta": "Esta enfermedad de la piel se caracteriza por puntos blancos y negros, inflamación de la piel y enrojecimiento",
+      "respuestaCorrecta": "Acné",
+      "respuestaErronea_1": "Cáncer de piel",
+      "respuestaErronea_2": "Cáncer de piel",
+      "respuestaErronea_3": "Lunares "
+    },
+    {
+      "pregunta": "La exposición prolongada a los rayos del sol puede provocar envejecimiento prematuro y aumentar significativamente el riesgo de ___________________",
+      "respuestaCorrecta": "Cáncer de piel",
+      "respuestaErronea_1": "Acné",
+      "respuestaErronea_2": "Melanoma",
+      "respuestaErronea_3": "Lunares "
+    },
+    {
+      "pregunta": "Es el tipo mas grave de Cáncer de piel, se forma en los melanocitos que producen melanina",
+      "respuestaCorrecta": "Melanom",
+      "respuestaErronea_1": "Cáncer de piel",
+      "respuestaErronea_2": "Acné",
+      "respuestaErronea_3": "Lunares "
+    },
+    {
+      "pregunta": "Cuáles son los tres elementos principales del sistema cardiovascular",
+      "respuestaCorrecta": "Corazón, vasos sanguíneos y sangre",
+      "respuestaErronea_1": "aCerebro, corazón, alma",
+      "respuestaErronea_2": "Sangre, piel y venas",
+      "respuestaErronea_3": "Corazón, sangre y cerebro"
+    },
+    {
+      "pregunta": "Es el órgano que se encuentra en la parte del tórax entre los pulmones. Sin su constante palpitación la vida pronto cesaría",
+      "respuestaCorrecta": "Corazón",
+      "respuestaErronea_1": "Sangre",
+      "respuestaErronea_2": "Pulmones",
+      "respuestaErronea_3": "Venas"
+    },
+    {
+      "pregunta": "Cuál es la función de los vasos sanguíneos",
+      "respuestaCorrecta": "Transportan la sangre por todo el cuerpo",
+      "respuestaErronea_1": "Crean células nuevas ",
+      "respuestaErronea_2": "Eliminan bacterias externas",
+      "respuestaErronea_3": "Crea estructuras sanguíneas"
+    },
+    {
+      "pregunta": " Es un liquido semitransparente que este compuesto principalmente por agua. Aproximadamente el 55% de la sangre total es ________",
+      "respuestaCorrecta": "Plasma",
+      "respuestaErronea_1": "Eritrocitos",
+      "respuestaErronea_2": "Plaquetas",
+      "respuestaErronea_3": "Sangre"
+    },
+    {
+      "pregunta": "Es la fuerza que la sangre ejerce sobre las paredes de los vasos sanguíneos, como resultado de haber sido bombeada por el corazón",
+      "respuestaCorrecta": "presión arterial",
+      "respuestaErronea_1": "infarto ",
+      "respuestaErronea_2": "hipertensión arterial",
+      "respuestaErronea_3": "Plasma "
+    },
+    {
+      "pregunta": "cuando los valores de la presión arterial sistólica son iguales o mayores a 140mm de Hg",
+      "respuestaCorrecta": "hipertensión arterial",
+      "respuestaErronea_1": "Presión arterial",
+      "respuestaErronea_2": "infarto",
+      "respuestaErronea_3": "arritmia"
+    },
+    {
+      "pregunta": "Es una enfermedad cardiovascular en la que las arterias se vuelven mas gruesas y se endurecen",
+      "respuestaCorrecta": "aterosclerosis",
+      "respuestaErronea_1": "presión arterial",
+      "respuestaErronea_2": "arritmia",
+      "respuestaErronea_3": "infarto"
+    },
+    {
+      "pregunta": "Es cuando la secuencia rítmica del corazón presenta una alteración",
+      "respuestaCorrecta": "arritmia",
+      "respuestaErronea_1": "presión arterial",
+      "respuestaErronea_2": "infarto",
+      "respuestaErronea_3": "arteriosis"
+    },
+    {
+      "pregunta": "La función de este sistema es proteger al cuerpo de microrganismos y sustancias químicas potencialmente dañinas; ya sea que los elimine, limite su daño o lo mantenga a raya para evitar que ingresen  al cuerpo",
+      "respuestaCorrecta": "sistema inmunológico",
+      "respuestaErronea_1": "sistema linfático",
+      "respuestaErronea_2": "sistema cardiovascular",
+      "respuestaErronea_3": "sistema óseo"
+    },
+    {
+      "pregunta": "Sistema que nos defiende de microbios y se organiza en múltiples órganos, los cuales forman y desarrollan el sistema inmunitario",
+      "respuestaCorrecta": "sistema linfático",
+      "respuestaErronea_1": "sistema inmunológico",
+      "respuestaErronea_2": "sistema cardiovascular",
+      "respuestaErronea_3": "sistema óseo"
+    },
+    {
+      "pregunta": "Es una sobrerreacción del sistema inmunológico a un agente extraño, como una reacción exacerbada",
+      "respuestaCorrecta": "alergia",
+      "respuestaErronea_1": "enfermedades autoinmunes",
+      "respuestaErronea_2": "tos",
+      "respuestaErronea_3": "dolor"
+    },
+    {
+      "pregunta": "es el resultado del fallo en el mecanismo que presenta la tolerancia a las proteínas propias de la persona",
+      "respuestaCorrecta": "enfermedades autoinmunes",
+      "respuestaErronea_1": "alergia",
+      "respuestaErronea_2": "tos",
+      "respuestaErronea_3": "dolor"
+    }
+  ]
+}

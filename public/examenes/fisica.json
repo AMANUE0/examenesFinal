@@ -1,0 +1,96 @@
+{
+  "nombre": "fisica",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué es el trabajo?",
+      "respuestaCorrecta": "Se define como el producto de la magnitud de la fuerza(F) por la magnitud del desplazamiento(x)",
+      "respuestaErronea_1": "Se define como 2 Joules por el producto de la distancia(x)",
+      "respuestaErronea_2": "Se define como la suma de fuerza(F) por la magnitud del desplazamiento(X)",
+      "respuestaErronea_3": "La división de potencia(P) y fuerza(F)"
+    },
+    {
+      "pregunta": "¿Como se mide el trabajo?",
+      "respuestaCorrecta": "joules",
+      "respuestaErronea_1": "Metros",
+      "respuestaErronea_2": "Newtons",
+      "respuestaErronea_3": "voltios"
+    },
+    {
+      "pregunta": "Se define como la cantidad de trabajo realizado en la unidad de tiempo, o bien, como la rapidez con que se efectúa un trabajo",
+      "respuestaCorrecta": "Potencia(P)",
+      "respuestaErronea_1": "Energía cinética(k)",
+      "respuestaErronea_2": "Energía",
+      "respuestaErronea_3": "Trabajo(W)"
+    },
+    {
+      "pregunta": "Cuando un cuerpo se encuentra en movimiento tiene energía y ¿esta corresponde a la energía?",
+      "respuestaCorrecta": "Energía cinética(k)",
+      "respuestaErronea_1": "Energía eólica",
+      "respuestaErronea_2": "Energía potencial(u)",
+      "respuestaErronea_3": "Energía "
+    },
+    {
+      "pregunta": "Es la energía que tiene un cuerpo por estar situado a determinada altura",
+      "respuestaCorrecta": "Energía potencial(u)",
+      "respuestaErronea_1": "Energía mecánica(E)",
+      "respuestaErronea_2": "Energía cinética(k)",
+      "respuestaErronea_3": "Energía eólica"
+    },
+    {
+      "pregunta": "Qué es la energía mecánica?",
+      "respuestaCorrecta": "Es la suma de la energía potencial(U) y de la energía cinética(k)",
+      "respuestaErronea_1": "Es la potencia sumada mas tiempo",
+      "respuestaErronea_2": "Es la división de tiempo y velocidad",
+      "respuestaErronea_3": "La suma de la energía mecánica(E) más distancia(x)"
+    },
+    {
+      "pregunta": "Es la relación entre la masa m y la velocidad v con que se mueve un objeto",
+      "respuestaCorrecta": "Cantidad de movimiento",
+      "respuestaErronea_1": "Cantidad de masa",
+      "respuestaErronea_2": "Cantidad",
+      "respuestaErronea_3": "Movimiento"
+    },
+    {
+      "pregunta": "Cual es la formula de la cantidad de movimiento",
+      "respuestaCorrecta": "p=mv",
+      "respuestaErronea_1": "U=mgy",
+      "respuestaErronea_2": "E=U+k",
+      "respuestaErronea_3": "I=Ft"
+    },
+    {
+      "pregunta": "Es producido por una fuerza y se define como el producto de la fuerza por el tiempo que dure aplicado",
+      "respuestaCorrecta": "Impulso(I)",
+      "respuestaErronea_1": "Velocidad",
+      "respuestaErronea_2": "Fuerza de atracción",
+      "respuestaErronea_3": "Potencia(p)"
+    },
+    {
+      "pregunta": "Cuales son los tipos de choque",
+      "respuestaCorrecta": "Elásticos y inelásticos",
+      "respuestaErronea_1": "Explosivo y no explosivo",
+      "respuestaErronea_2": "Rotos y no rotos",
+      "respuestaErronea_3": "Elásticos y duros"
+    },
+    {
+      "pregunta": "Que dice la ley de la cantidad de movimiento",
+      "respuestaCorrecta": "La cantidad de movimiento total en un sistema aislado no varia por efecto de los choques",
+      "respuestaErronea_1": "La relación que existe entre la distancia total recorrida es desigual",
+      "respuestaErronea_2": "No existe",
+      "respuestaErronea_3": "La cantidad de movimiento siempre será igual"
+    },
+    {
+      "pregunta": "¿Que son los choques elásticos?",
+      "respuestaCorrecta": "Son aquellos en los cuales se conserva la cantidad de movimiento y también se conserva la energía cinética",
+      "respuestaErronea_1": "En este tipo de choques se conserva la cantidad de movimiento antes y después del choque, pero no se conserva la anergia cinética",
+      "respuestaErronea_2": "Son choque que rebotan",
+      "respuestaErronea_3": "Los que se producen con ligas"
+    },
+    {
+      "pregunta": "¿Que son los choques inelásticos?",
+      "respuestaCorrecta": "En este tipo de choques se conserva la cantidad de movimiento antes y después del choque, pero no se conserva la anergia cinética",
+      "respuestaErronea_1": "Son aquellos en los cuales se conserva la cantidad de movimiento y también se conserva la energía cinética",
+      "respuestaErronea_2": "Son choque que rebotan",
+      "respuestaErronea_3": "Los que se producen con ligas"
+    }
+  ]
+}
