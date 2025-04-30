@@ -6,5 +6,9 @@
   {
     "nombre": "fisica",
     "archivo": "fisica.json"
+  },
+  {
+    "nombre": "empresariales",
+    "archivo": "empresariales.json"
   }
 ]
