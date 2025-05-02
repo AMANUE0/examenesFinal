@@ -1,0 +1,173 @@
+{
+    "nombre": "filosofia",
+    "preguntas": [
+      {
+        "pregunta": "Esta filosofía surgió a raíz del Renacimiento, que fue un movimiento cultural europeo que, en España llego a su apogeo en el siglo XVI",
+        "respuestaCorrecta": "Filosofía moderna",
+        "respuestaErronea_1": "Filosofía renacentista",
+        "respuestaErronea_2": "Filosofía Cosmologica",
+        "respuestaErronea_3": "Filosofía politica"
+      },
+      {
+        "pregunta": "Es una de las características del Renacimiento.",
+        "respuestaCorrecta": "La búsqueda de conocimientos nuevos con el fin de entender el funcionamiento del mundo mediante la aproximación analítica basada en el estudio.",
+        "respuestaErronea_1": "Construcciones de monumentos romanos y griegos y la introducción de la perspectiva y la pintura del óleo.",
+        "respuestaErronea_2": "Grupo de judios que vivieron en los reinos de Castilla y Aragon hasta que fueron expulsados por los Reyes Catolicos.",
+        "respuestaErronea_3": "Ninguna de las anteriores."
+      },
+      {
+        "pregunta": "Estas son las principales fases de la filosofía moderna.",
+        "respuestaCorrecta": "Racionalismo, Empirismo y Ilustración",
+        "respuestaErronea_1": "Moderna y Politica",
+        "respuestaErronea_2": "Rene descartes y Nicolas Malebranche",
+        "respuestaErronea_3": "Edad antigua y edad moderna"
+      },
+      {
+        "pregunta": "Sostiene la supremacía de la razón sobre la experiencia.",
+        "respuestaCorrecta": "Racionalismo.",
+        "respuestaErronea_1": "Empirismo.",
+        "respuestaErronea_2": "Filosofía moderna",
+        "respuestaErronea_3": "Empirismo"
+      },
+      {
+        "pregunta": "Niega la posibilidad de ideas preconcebidas o a \"priori\", pues afirma que todo conocimiento se basa en la experiencia.",
+        "respuestaCorrecta": "Empirismo",
+        "respuestaErronea_1": "Racionalismo",
+        "respuestaErronea_2": "Edad moderna",
+        "respuestaErronea_3": "Ilustracion"
+      },
+      {
+        "pregunta": "Son las ideas filosóficas y políticas que se extienden por países de Europa, desde mediados del siglo XVII al XVIII.",
+        "respuestaCorrecta": "Ilustración.",
+        "respuestaErronea_1": "Racionalismo.",
+        "respuestaErronea_2": "Empirismo.",
+        "respuestaErronea_3": "Filosofía moderna."
+      },
+      {
+        "pregunta": "Este  filósofo francés. Trato de aplicar a la filosofía los procedimientos racionales inductivos de la ciencia. Determinó no creer ninguna verdad hasta haber establecido las razones para creerla.",
+        "respuestaCorrecta": "Rene Descartes.",
+        "respuestaErronea_1": "Baruch Spinoza.",
+        "respuestaErronea_2": "Nicolas Malebranche.",
+        "respuestaErronea_3": "Gottfried Leibniz."
+      },
+      {
+        "pregunta": "Filósofo ingles. Exploró el tema de la voluntad y determinó que el humano tiene la capacidad de tomar decisiones y tener control sobre las acciones. Sugiere que lo que determina a una persona es la capacidad de reconocerse en experiencias pasadas.",
+        "respuestaCorrecta": "John Locke.",
+        "respuestaErronea_1": "Rene Descartes.",
+        "respuestaErronea_2": "David Hume.",
+        "respuestaErronea_3": "George Barkeley."
+      },
+      {
+        "pregunta": "Filósofo francés. Rechazo todo lo que fuera irracional e incomprensible y animó a sus contemporáneos a luchar activamente contra la intolerancia, la tiranía y la superstición.",
+        "respuestaCorrecta": "Voltaire.",
+        "respuestaErronea_1": "Denis Diderot.",
+        "respuestaErronea_2": "Jean-Jacques Rousseau.",
+        "respuestaErronea_3": "Rene descartes."
+      },
+      {
+        "pregunta": "El término procede del vocablo latino \"trascendentails\", que en la filosofía escolástica significa \"los conceptos que están por encima de todas las categorías concebibles\".",
+        "respuestaCorrecta": "El idealismo trascendental.",
+        "respuestaErronea_1": "Ilustración.",
+        "respuestaErronea_2": "Empirismo.",
+        "respuestaErronea_3": "Racionalismo."
+      },
+      {
+        "pregunta": "¿Qué es el romanticismo?",
+        "respuestaCorrecta": "Un movimiento cultural que surgió en Europa a finales del siglo XVIII y comienzos del XIX, que se opuso al principio básico de la ilustración.",
+        "respuestaErronea_1": "Meditación acerca de lo que esta por encima o más allá del mundo físico. ",
+        "respuestaErronea_2": "Un movimiento intelectual que floreció en el siglo XVIII, conocido como el Siglo de las Luces.",
+        "respuestaErronea_3": "Ninguna de las anteriores."
+      },
+      {
+        "pregunta": "Esta escuela de pensamiento tiene la tendencia a valorar la razón como única fuente del auténtico conocimiento. ",
+        "respuestaCorrecta": "Racionalismo.",
+        "respuestaErronea_1": "Empirismo.",
+        "respuestaErronea_2": "Ilustracion.",
+        "respuestaErronea_3": "Romanticismo."
+      },
+      {
+        "pregunta": "Es considerado el padre de la filosofía moderna.",
+        "respuestaCorrecta": "Rene descartes.",
+        "respuestaErronea_1": "Immanuel Kant.",
+        "respuestaErronea_2": "John Locke",
+        "respuestaErronea_3": "Baruch Spinoza."
+      },
+      {
+        "pregunta": "Este filósofo dice que todos los seres humanos tienen la capacidad de razonar las situaciones y determinar si algo es bueno o si es moralmente erróneo.",
+        "respuestaCorrecta": "Immanuel Katn.",
+        "respuestaErronea_1": "Rene Descartes.",
+        "respuestaErronea_2": "John Locke.",
+        "respuestaErronea_3": "Aristoteles."
+      },
+      {
+        "pregunta": "El método __________ propone que, para tener la certeza genuina sobre el conocimiento, primero se debe renunciar a todas las creencias que se adquirieron, a través de la experiencia o la educación.",
+        "respuestaCorrecta": "Cartesiano.",
+        "respuestaErronea_1": "Cientifico.",
+        "respuestaErronea_2": "Racional.",
+        "respuestaErronea_3": "Ilustrativo."
+      },
+      {
+        "pregunta": "Primera regla del metodo.",
+        "respuestaCorrecta": "La evidencia o el criterio de verdad.",
+        "respuestaErronea_1": "Analísis.",
+        "respuestaErronea_2": "Síntesis.",
+        "respuestaErronea_3": "Comprobación."
+      },
+      {
+        "pregunta": "Segunda regla.",
+        "respuestaCorrecta": "Analísis.",
+        "respuestaErronea_1": "La evidencia o el criterio de verdad.",
+        "respuestaErronea_2": "Síntesis.",
+        "respuestaErronea_3": "Comprobación."
+      },
+      {
+        "pregunta": "Tercera regla.",
+        "respuestaCorrecta": "Síntesis.",
+        "respuestaErronea_1": "La evidencia o el criterio de verdad.",
+        "respuestaErronea_2": "Análisis.",
+        "respuestaErronea_3": "Comprobación."
+      },
+      {
+        "pregunta": "Cuarta regla.",
+        "respuestaCorrecta": "Comprobación.",
+        "respuestaErronea_1": "Análisis.",
+        "respuestaErronea_2": "Síntesis.",
+        "respuestaErronea_3": "La evidencia o el criterio de verdad ."
+      },
+      {
+        "pregunta": "¿Qué es la ilustración?",
+        "respuestaCorrecta": "Fue una importante modernización cultural, resultado directo del progreso y de la difusión de nuevas ideas y conocimientos cientificos.",
+        "respuestaErronea_1": "Ve la experiencia como la norma de verdad en el conocimiento.",
+        "respuestaErronea_2": "Es un nivel de conocimiento basado en los sentidos, inadecuado y confuso.",
+        "respuestaErronea_3": "Dibujar el pensamiento."
+      },
+      {
+        "pregunta": "Estos son los postulados que establece Kant.",
+        "respuestaCorrecta": "La libertad, la inmortalidad  del alma y la existencia de Dios.",
+        "respuestaErronea_1": "La libertad y la inmortalidad del alma.",
+        "respuestaErronea_2": "Racionalismo, empirismo y ilustracion.",
+        "respuestaErronea_3": "La mortalidad del alma, el esclavismo y la existencia de Dios."
+      },
+      {
+        "pregunta": "Postulado 1.",
+        "respuestaCorrecta": "El mundo de la razón práctica está regido por la libertad.",
+        "respuestaErronea_1": "En este mundo es imposible la perfecta conformaidad entre voluntad y la ley moral.",
+        "respuestaErronea_2": "Realización efectiva del bien supremo al que aspira la voluntad. Dios como ser en el que se identifica ser y debe ser, virtud y felicidad.",
+        "respuestaErronea_3": "Necesaria e independiente de la experiencia."
+      },
+      {
+        "pregunta": "Postulado 2.",
+        "respuestaCorrecta": "En este mundo es imposible la perfecta conformaidad entre voluntad y la ley moral.",
+        "respuestaErronea_1": "El mundo de la razón práctica está regido por la libertad.",
+        "respuestaErronea_2": "Necesaria e independiente de la experiencia.",
+        "respuestaErronea_3": "Realización efectiva del bien supremo al que aspira la vountad. Dios como ser en el que se identifica ser y debe ser, virtud y felicidad."
+      },
+      {
+        "pregunta": "Postulado 3.",
+        "respuestaCorrecta": "Realización efectiva del bien supremo al que aspira la vountad. Dios como ser en el que se identifica ser y debe ser, virtud y felicidad.",
+        "respuestaErronea_1": "El mundo de la razón práctica está regido por la libertad.",
+        "respuestaErronea_2": "Necesaria e independiente de la experiencia.",
+        "respuestaErronea_3": "En este mundo es imposible la perfecta conformaidad entre voluntad y la ley moral"
+      }
+    ]
+  }
