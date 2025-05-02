@@ -113,35 +113,41 @@
         </div>
         <button  id="login">Acceso</button>
     </form>
+<script>
+    let username = localStorage.getItem("username");
 
-    <script>
-        let login = document.getElementById('login');
-        login.addEventListener('click', (e) => {
-            e.preventDefault() // evita que la pagina se recarge
-            fetch('/admin/usuarios')
-        .then(res => res.json())
-        .then(data => {
-            const usuarioIngresado = document.getElementById('username').value;
-            const contraseñaIngresada = document.getElementById('password').value;
-            
-            const usuarioEncontrado = data.find(usuario => {
-                return usuario.nombre === usuarioIngresado && usuario.contraseña === contraseñaIngresada
+    if (!username) {
+        username = prompt("¿Cuál es tu nombre?");
+        localStorage.setItem("username", username);
+    }
+
+    const form = document.getElementById('formulario');
+    const input = document.getElementById('mensaje');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const mensaje = input.value.trim();
+
+        if (mensaje.length > 0) {
+            // Aquí mandas el mensaje junto con el username
+            socket.emit('chatMessage', {
+                username: username,
+                mensaje: mensaje
             });
 
-            if (usuarioEncontrado) {
-                alert("Usuario encontrado");
-                window.location.href = "/admin";
-                localStorage.setItem("username", usuarioIngresado);
-            }
-            else {
-                alert("Usuario no encontrado");
-            }
-        }).catch(err => {
-            console.log("Error al obtener usuarios", err);
-            alert("Error al intentar iniciar sesion");
-        })
-        });
-        
-    </script>
+            input.value = '';
+        }
+    });
+
+    // Cuando recibas mensajes
+    socket.on('chatMessage', (data) => {
+        const mensajes = document.getElementById('mensajes');
+        const nuevoMensaje = document.createElement('li');
+        nuevoMensaje.textContent = `${data.username}: ${data.mensaje}`;
+        mensajes.appendChild(nuevoMensaje);
+    });
+</script>
+
 </body>
 </html>

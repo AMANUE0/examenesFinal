@@ -11,24 +11,47 @@ const io = socketIo(server);
 const puerto = 3000;
 
 let usuariosConectados = 0;
-
 io.on("connection", (socket) => {
     usuariosConectados++;
-    console.log(
-        "Usuario conectado. Total de usuarios conectados: ",
-        usuariosConectados,
-    );
-
-    // Emitir número de usuarios a todos
+    console.log("Usuario conectado. Total de usuarios conectados:", usuariosConectados);
     io.emit("usuariosConectados", usuariosConectados);
+
+    socket.on("registrarUsuario", (nombreUsuario) => {
+        // Leer usuarios.json
+        const usuariosPath = path.join(__dirname, 'usuarios.json');
+        const usuariosData = fs.readFileSync(usuariosPath, 'utf8');
+        const usuarios = JSON.parse(usuariosData);
+
+        // Verificar si el nombre está registrado
+        const usuarioEncontrado = usuarios.find(u => u.nombre === nombreUsuario);
+
+        if (usuarioEncontrado) {
+            socket.nombreUsuario = nombreUsuario;
+            socket.emit("registroExitoso");
+            console.log(`Usuario registrado correctamente: ${nombreUsuario}`);
+        } else {
+            socket.emit("registroFallido", "Usuario no registrado.");
+            console.log(`Intento de registro fallido: ${nombreUsuario}`);
+            socket.disconnect(); // Opcional: desconectar si no está registrado
+        }
+    });
+
+    socket.on("nuevoMensaje", (mensaje) => {
+        if (!socket.nombreUsuario) {
+            console.log("Mensaje rechazado: Usuario no registrado");
+            return; // Ignorar si no está registrado
+        }
+        const mensajeConNombre = {
+            usuario: socket.nombreUsuario,
+            mensaje: mensaje
+        };
+        io.emit("mensajeRecibido", mensajeConNombre);
+    });
 
     socket.on("disconnect", () => {
         usuariosConectados--;
-        console.log(
-            "Usuario desconectado. Total de usuarios conectados: ",
-            usuariosConectados,
-        );
-        io.emit("usuariosConectados", usuariosConectados); // Actualizar al desconectarse
+        console.log("Usuario desconectado. Total de usuarios conectados:", usuariosConectados);
+        io.emit("usuariosConectados", usuariosConectados);
     });
 });
 

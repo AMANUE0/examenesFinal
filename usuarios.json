@@ -1,7 +1,6 @@
 [
   {
     "nombre": "Manuel",
-    "email": "balderasManuel@gmail.com",
     "contraseña": "Camila1manuel1",
     "fecha": "4/20/2025"
   },
@@ -9,5 +8,25 @@
     "nombre": "asdfsdf",
     "contraseña": "asdfadsfsdaf",
     "fecha": "4/21/2025"
+  },
+  {
+    "nombre": "Manuel",
+    "contraseña": "Camila1manuel1",
+    "fecha": "28/4/2025"
+  },
+  {
+    "nombre": "Manuel",
+    "contraseña": "Camila1manuel1",
+    "fecha": "28/4/2025"
+  },
+  {
+    "nombre": "Manuel",
+    "contraseña": "Camila1manuel",
+    "fecha": "28/4/2025"
+  },
+  {
+    "nombre": "Manuel",
+    "contraseña": "Camila1manuel1",
+    "fecha": "28/4/2025"
   }
 ]
