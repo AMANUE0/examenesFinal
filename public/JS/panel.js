@@ -5,8 +5,7 @@ socket.on("connect", () => {
 });
 
 socket.on("usuariosConectados", (usuarios) => {
-    document.getElementById("contador").textContent =
-        `Usuarios conectados: ${usuarios}`;
+    document.getElementById("online-users").textContent = usuarios;
 });
 
 let currentExamId = null;

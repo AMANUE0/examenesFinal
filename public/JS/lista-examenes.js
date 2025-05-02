@@ -163,7 +163,7 @@ async function cargarExamenes() {
                     card.querySelector(".examen-titulo").textContent;
                 renderExamen(nombreExamen);
             });
-            contenedor.appendChild(card);
+            contenedor.prepend(card);
         });
     } catch (error) {
         console.error("Error al cargar los exámenes:", error);

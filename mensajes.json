@@ -1,8 +1,7 @@
 [
-  
   {
-    "nombre": "Nombre",
-    "mensaje": "Deja una opinión sobre la pagina para mejorar la experiencia de los usuarios",
-    "fecha": "4/21/2025"
+    "nombre": "Tu nombre",
+    "mensaje": "Escribe tu nombre y deja una opinión para mejorar la experiencia del usuario.",
+    "fecha": "2/5/2025"
   }
 ]

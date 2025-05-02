@@ -5,16 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Panel de Exámenes</title>
         <link rel="stylesheet" href="/css/panel.css" />
+        <link rel="stylesheet" href="../public/css/panel.css" />
+    <script src="https://kit.fontawesome.com/6788e71a64.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h2>Lince nexus</h2>
+        <header>
+            <section class="panel-section">
+                <i class="fa-solid fa-user"></i>
+                <p><span id="online-users">0</span> / 30</p>
+            </section>
+
+            <a class="panel-section" href="/examenes">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p>Exámenes</p>
+            </a>
+            <a class="panel-section" href="/comunidad">
+                <i class="fa-solid fa-users"></i>
+                <p>Comunidad</p>
+            </a>
+            <a class="panel-section" href="/admin">
+                <i class="fa-solid fa-lock"></i>
+                <p>Admin</p>
+            </a>
+            
+            <!-- <button class="panel-section">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Cerrar sesión</p>
+            </button> -->
+        </header>
         <h2 id="contador"></h2>
         <div class="container">
             <div id="exam-form" class="form-container">
-                <h2>Crear Nuevo Examen</h2>
-                <p>El nombre del examen no debe llevar espacios</p>
+                <h2 class="h2-form" >ASCENSE</h2>
+                <details>
+                    <summary><i class="fa-solid fa-plus"></i> Instrucciones</summary>
+                        <ul>
+                            <li class="instruccion"><strong class="instruccion-strong">Crear un nuevo examen:</strong>
+                                <ul>
+                                    <li>Escribe el nombre del examen en el campo correspondiente. Usa <strong>SÓLO letras o números, sin espacios</strong>.</li>
+                                    <li>Haz clic en <em>"Crear Examen"</em>.</li>
+                                </ul>
+                            </li>
+                            <li class="instruccion"><strong class="instruccion-strong">Agregar preguntas:</strong>
+                                <ul>
+                                    <li>Completa los campos con la pregunta, la respuesta correcta y tres incorrectas.</li>
+                                    <li>Haz clic en <em>"Agregar Pregunta"</em> para guardarla temporalmente.</li>
+                                </ul>
+                            </li>
+                            <li class="instruccion"><strong class="instruccion-strong">Finalizar examen:</strong>
+                                <ul>
+                                    <li>Cuando hayas agregado todas las preguntas, haz clic en <em>"Finalizar Examen"</em> para guardar todo.</li>
+                                </ul>
+                            </li>
+                            <li class="instruccion"><strong class="instruccion-strong">Vista previa:</strong>
+                                <ul>
+                                    <li>Las preguntas que agregues se mostrarán abajo para que puedas revisarlas antes de finalizar.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                </details>
                 <form id="create-exam-form">
                     <input
+                        class="input-exam"
                         type="text"
                         id="exam-name"
                         placeholder="Nombre del examen SIN ESPACIOS"
@@ -27,9 +80,9 @@
             <div
                 id="question-form"
                 class="form-container"
-                style="display: none"
+                style="display: none;"
             >
-                <h2>Agregar Pregunta</h2>
+                <h2 class="h2-form">Agregar Pregunta</h2>
                 <form id="add-question-form">
                     <input
                         type="text"

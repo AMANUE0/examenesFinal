@@ -1,0 +1,26 @@
+{
+  "nombre": "test4",
+  "preguntas": [
+    {
+      "pregunta": "1+1",
+      "respuestaCorrecta": "2",
+      "respuestaErronea_1": "3",
+      "respuestaErronea_2": "4",
+      "respuestaErronea_3": "5"
+    },
+    {
+      "pregunta": "Como se llama beniasñflkja",
+      "respuestaCorrecta": "Un lenguaje de programacion",
+      "respuestaErronea_1": "sdfg",
+      "respuestaErronea_2": "4",
+      "respuestaErronea_3": "ñlkjsñdlkfj"
+    },
+    {
+      "pregunta": "Que es python?",
+      "respuestaCorrecta": "Es un lenguaje de programacion",
+      "respuestaErronea_1": "vibora",
+      "respuestaErronea_2": "piton",
+      "respuestaErronea_3": "nose"
+    }
+  ]
+}

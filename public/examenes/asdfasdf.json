@@ -1,0 +1,19 @@
+{
+  "nombre": "asdfasdf",
+  "preguntas": [
+    {
+      "pregunta": "asfasdf",
+      "respuestaCorrecta": "asdfas",
+      "respuestaErronea_1": "dfasdfa",
+      "respuestaErronea_2": "dsfasdf",
+      "respuestaErronea_3": "asdfasdf"
+    },
+    {
+      "pregunta": "asdfasdf",
+      "respuestaCorrecta": "asdfa",
+      "respuestaErronea_1": "sdfasdf",
+      "respuestaErronea_2": "asdfasdf",
+      "respuestaErronea_3": "asdfasf"
+    }
+  ]
+}

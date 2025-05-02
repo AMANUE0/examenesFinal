@@ -157,7 +157,22 @@ app.delete("/admin/mensajes", (req, res) => {
         res.status(404).json({ error: "Archivo no encontrado." });
     }
 });
-
+app.delete("/panel/examenesNombre", (req, res) => {
+    const { index } = req.body;
+    const archivo = path.join(__dirname, "public/examenes/pruebas.json");
+    if (fs.existsSync(archivo)) {
+        const examenes = JSON.parse(fs.readFileSync(archivo, "utf-8"));
+        if (index >= 0 && index < examenes.length) {
+            examenes.splice(index, 1);
+            fs.writeFileSync(archivo, JSON.stringify(examenes, null, 2));
+            res.json({ mensaje: "Mensaje eliminado con éxito." });
+        } else {
+            res.status(400).json({ error: "Índice inválido." });
+        }
+    } else {
+        res.status(404).json({ error: "Archivo no encontrado." });
+    }
+});
 app.get("/admin/usuarios", (req, res) => {
     const archivo = path.join(__dirname, "usuarios.json");
     if (fs.existsSync(archivo)) {
