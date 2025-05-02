@@ -1,0 +1,145 @@
+{
+  "nombre": "empresariales",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué es la filosofía empresarial?",
+      "respuestaCorrecta": "a) Conjunto de valores, principios y creencias que guían a una empresa",
+      "respuestaErronea_1": "b) Solo las reglas legales de una empresa",
+      "respuestaErronea_2": "c) La decoración de una oficina",
+      "respuestaErronea_3": "d) El manual de empleados"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes es un elemento de la filosofía empresarial?",
+      "respuestaCorrecta": "a) La misión",
+      "respuestaErronea_1": "el producto",
+      "respuestaErronea_2": "el edificio ",
+      "respuestaErronea_3": "la competencia"
+    },
+    {
+      "pregunta": "Cómo influye la filosofía empresarial en una organización?",
+      "respuestaCorrecta": "a) Define los valores que orientan la toma de decisiones ",
+      "respuestaErronea_1": "aumenta el sueldo significativamente ",
+      "respuestaErronea_2": "obliga a seguir modas y desiciones",
+      "respuestaErronea_3": "contola el clima laboal externo"
+    },
+    {
+      "pregunta": "¿Qué es una empersa?",
+      "respuestaCorrecta": "a) Una organización que ofrece bienes o servicios para obtener ganancias ",
+      "respuestaErronea_1": "una plaza pública",
+      "respuestaErronea_2": "un sindicato de tabajadores",
+      "respuestaErronea_3": "un sistema político"
+    },
+    {
+      "pregunta": "¿Cuál es el objetivo principal de una empresa?",
+      "respuestaCorrecta": "obtener ganancias",
+      "respuestaErronea_1": "producir leyes",
+      "respuestaErronea_2": "cumplir una meta personal",
+      "respuestaErronea_3": "vender al extranjero"
+    },
+    {
+      "pregunta": "¿Qué diferencia a una empresa pública de una privada?",
+      "respuestaCorrecta": " La pública es del gobierno y la privada de particulares ",
+      "respuestaErronea_1": "La pública no genera dinero y la privada si",
+      "respuestaErronea_2": "la privada es para ricos",
+      "respuestaErronea_3": "la pública es solo a beneficiencia "
+    },
+    {
+      "pregunta": "¿Qué función cumple una empresa en la sociedad?",
+      "respuestaCorrecta": "generar empleo",
+      "respuestaErronea_1": "organizar instituciones",
+      "respuestaErronea_2": "escribir noticias",
+      "respuestaErronea_3": "flujo constante de dinero"
+    },
+    {
+      "pregunta": "¿Cuál NO es un tipo de empresa según su actividad económica?",
+      "respuestaCorrecta": "comercial",
+      "respuestaErronea_1": "escolar",
+      "respuestaErronea_2": "industrial",
+      "respuestaErronea_3": "de servicios"
+    },
+    {
+      "pregunta": "¿Qué tipo de empresa transforma materias primas en productos?",
+      "respuestaCorrecta": "industrial",
+      "respuestaErronea_1": "comercial",
+      "respuestaErronea_2": "agricola",
+      "respuestaErronea_3": "financiera"
+    },
+    {
+      "pregunta": "¿Qué diferencia a una empresa grande de una pequeña?",
+      "respuestaCorrecta": "el número de empleados y su nivel de producción",
+      "respuestaErronea_1": "su ubicación",
+      "respuestaErronea_2": "el nombre",
+      "respuestaErronea_3": "el uso de internet"
+    },
+    {
+      "pregunta": "¿Qué significa MyPyME?",
+      "respuestaCorrecta": " Micro, Pequeña y Mediana Empresa ",
+      "respuestaErronea_1": "Misión Potencial y Empresarial",
+      "respuestaErronea_2": "Mayor Producción empresarial",
+      "respuestaErronea_3": " Misión Profesional Empresarial"
+    },
+    {
+      "pregunta": "¿Qué ventaja tienen las MyPyMEs?",
+      "respuestaCorrecta": "son más flexibles y adaptables",
+      "respuestaErronea_1": "no pagan impuestos",
+      "respuestaErronea_2": "siempre tienen sucursales grandes",
+      "respuestaErronea_3": "no necesitan empleados"
+    },
+    {
+      "pregunta": "¿Cuál es un reto común para las MyPyMEs?",
+      "respuestaCorrecta": "falta de financiamento",
+      "respuestaErronea_1": "exceso de empleados",
+      "respuestaErronea_2": "no tener jefe",
+      "respuestaErronea_3": "vender a todo el mundo"
+    },
+    {
+      "pregunta": "¿Por qué son importantes las MyPyMEs en México?",
+      "respuestaCorrecta": "Generan muchos empleos",
+      "respuestaErronea_1": "son empresas extranjeras",
+      "respuestaErronea_2": "son del gobierno",
+      "respuestaErronea_3": "solo existen en grandes ciudades"
+    },
+    {
+      "pregunta": "¿Qué es la misión de una empresa?",
+      "respuestaCorrecta": " Su razón de ser y lo que hace actualmente ",
+      "respuestaErronea_1": "lo que haran en 100 años ",
+      "respuestaErronea_2": "sus ganancias pasadas",
+      "respuestaErronea_3": "su presupuesto"
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes es una misión para una empresa de comida rápida?",
+      "respuestaCorrecta": "Ofrecer alimentos sabrosos, accesibles y rápidos para nuestros clientes ",
+      "respuestaErronea_1": "eliminar el comercio local",
+      "respuestaErronea_2": "vender mucho potaxio",
+      "respuestaErronea_3": "reducir costos"
+    },
+    {
+      "pregunta": "¿Qué es la visión empresarial?",
+      "respuestaCorrecta": " Es lo que la empresa quiere lograr en el futuro ",
+      "respuestaErronea_1": "es su logotipo",
+      "respuestaErronea_2": "es el impacto de su eslogan en el mercado",
+      "respuestaErronea_3": "es un reglamento interno"
+    },
+    {
+      "pregunta": "¿Por qué es importante tener misión y visión?",
+      "respuestaCorrecta": "Guían el rumbo y objetivos de la empresa ",
+      "respuestaErronea_1": "sirven solo para publicidad",
+      "respuestaErronea_2": "son documentos confidenciales",
+      "respuestaErronea_3": "sustituyen a los empleados"
+    },
+    {
+      "pregunta": "¿Qué es un modelo de negocio?",
+      "respuestaCorrecta": "La forma en que una empresa genera valor y ganancias ",
+      "respuestaErronea_1": "la imagen de una empresa en edes",
+      "respuestaErronea_2": "un catálogo de negocios",
+      "respuestaErronea_3": "un catálogo de productos"
+    },
+    {
+      "pregunta": "¿Cuál es un elemento clave del modelo de negocio?",
+      "respuestaCorrecta": "propuesta de valor",
+      "respuestaErronea_1": "número de bancas en la oficina",
+      "respuestaErronea_2": "los colores del uniforme",
+      "respuestaErronea_3": "la elaboracion de el logo"
+    }
+  ]
+}
