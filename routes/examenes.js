@@ -7,7 +7,7 @@ router.post("/examenes", async (req, res) => {
   try {
     const { nombre } = req.body;
 
-    const examDir = path.join(__dirname, "public/examenes");
+    const examDir = path.join(__dirname, "../public/examenes");
 
     // Create examenes directory if it doesn't exist
     if (!fs.existsSync(examDir)) {
@@ -21,7 +21,7 @@ router.post("/examenes", async (req, res) => {
 
     // Crear nombre del archivo basado en la materia
     const nombreArchivo = nombre.toLowerCase().replace(/\s+/g, "_") + ".json";
-    const archivo = path.join(__dirname, "public/examenes", nombreArchivo);
+    const archivo = path.join(__dirname, "../public/examenes", nombreArchivo);
 
     // Guardar el nuevo archivo JSON
     fs.writeFileSync(archivo, JSON.stringify(nuevoExamen, null, 2));
@@ -29,7 +29,7 @@ router.post("/examenes", async (req, res) => {
     // También agregamos referencia en pruebas.json
     const archivoPruebas = path.join(
       __dirname,
-      "public/examenes/pruebas.json",
+      "../public/examenes/pruebas.json",
     );
     let examenes = [];
 
