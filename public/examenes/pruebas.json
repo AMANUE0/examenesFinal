@@ -8,12 +8,7 @@
     "archivo": "fisica.json"
   },
   {
-<<<<<<< HEAD
-    "nombre": "test",
-    "archivo": "test.json"
-=======
     "nombre": "empresariales",
     "archivo": "empresariales.json"
->>>>>>> 5b1b859e63460d01686aa43dd9df0584558181e3
   }
 ]
