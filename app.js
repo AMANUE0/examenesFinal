@@ -55,6 +55,7 @@ io.on("connection", (socket) => {
     });
 });
 
+
 // Permitir procesar datos de formularios
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
