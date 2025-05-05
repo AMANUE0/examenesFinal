@@ -27,12 +27,8 @@
                 <i class="fa-solid fa-lock"></i>
                 <p>Admin</p>
             </a>
-            
-            <!-- <button class="panel-section">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                <p>Cerrar sesión</p>
-            </button> -->
-        </header>
+
+            </header>
         <h2 id="contador"></h2>
         <div class="container">
             <div id="exam-form" class="form-container">
@@ -70,9 +66,56 @@
                         class="input-exam"
                         type="text"
                         id="exam-name"
-                        placeholder="Nombre del examen SIN ESPACIOS"
+                        placeholder="Nombre del examen"
                         required
                     />
+                    <input
+                        class="input-exam"
+                        type="text"
+                        id="exam-author"
+                        placeholder="Author del examen"
+                        required
+                    />
+                    <input
+                        class="input-exam"
+                        type="text"
+                        id="exam-description"
+                        placeholder="Descripcion del examen"
+                        required
+                    />
+                    <label for=""></label>
+                    <select name="tags" id="select-option-asignatura">
+                        <optgroup label="Asignatura">
+                            <option value="selecciona">Selecciona una asignatura</option>
+                            <option value="Filosofia">Filosofía</option>
+                            <option value="Base de datos I">Base de datos I</option>
+                            <option value="Biologia en la salud">Biologia en la salud</option>
+                            <option value="Desarrollo Visual I">Desarrollo Visual I</option>
+                            <option value="Desarrollo Web I">Desarrollo Web I</option>
+                            <option value="Fundamentos de la solucion de conflictos">Fundamentos de la solución de conflictos</option>
+                            <option value="Introduccion a las actividades empresariales">Introducción a las actividades empresariales</option>
+                            <option value="La ciencia del movimiento">La ciencia del movimiento</option>
+                            <option value="Mi conexion al mundo en otra lengua II">Mi conexion al mundo en otra lengua II</option>
+                            <option value="Probabilidad y estadistica">Probabilidad y estadistica</option>
+                            <option value="Robotica">Robotica</option>
+                        </optgroup>
+                    </select>
+                    <select name="etapa" id="select-option-etapa">
+                        <optgroup label="Tipo de examen">
+                            <option value="selecciona">Selecciona una etapa</option>
+                            <option value="Primer-parcial">Primer parcial</option>
+                            <option value="Medio-termino">Medio termino</option>
+                            <option value="Segundo-parcial">Segundo parcial</option>
+                            <option value="Global">Global</option>
+                        </optgroup>
+                     </select>
+                     <select name="etado" id="select-option-estado">
+                        <optgroup label="Estado">
+                            <option value="selecciona">Selecciona una opción</option>
+                            <option value="disponible">Disponible</option>
+                            <option value="no-disponible">No disponible</option>
+                        </optgroup>
+                      </select>
                     <button type="submit" class="btn">Crear Examen</button>
                 </form>
             </div>

@@ -2,35 +2,29 @@ const path = require("path");
 const fs = require("fs");
 const express = require("express");
 const router = express.Router();
-
 router.post("/examenes", async (req, res) => {
   try {
     const { nombre } = req.body;
 
+    if (!nombre || typeof nombre !== "string" || nombre.trim() === "") {
+      return res.status(400).json({ error: "Nombre de examen inválido" });
+    }
+
     const examDir = path.join(__dirname, "../public/examenes");
 
-    // Create examenes directory if it doesn't exist
     if (!fs.existsSync(examDir)) {
       fs.mkdirSync(examDir, { recursive: true });
     }
+
+    const nombreArchivo = nombre.toLowerCase().replace(/\s+/g, "_") + ".json";
+    const archivo = path.join(examDir, nombreArchivo);
 
     const nuevoExamen = {
       nombre,
       preguntas: [],
     };
 
-    // Crear nombre del archivo basado en la materia
-    const nombreArchivo = nombre.toLowerCase().replace(/\s+/g, "_") + ".json";
-    const archivo = path.join(__dirname, "../public/examenes", nombreArchivo);
-
-    // Guardar el nuevo archivo JSON
-    fs.writeFileSync(archivo, JSON.stringify(nuevoExamen, null, 2));
-
-    // También agregamos referencia en pruebas.json
-    const archivoPruebas = path.join(
-      __dirname,
-      "../public/examenes/pruebas.json",
-    );
+    const archivoPruebas = path.join(examDir, "pruebas.json");
     let examenes = [];
 
     if (fs.existsSync(archivoPruebas)) {
@@ -41,9 +35,17 @@ router.post("/examenes", async (req, res) => {
         examenes = [];
       }
     } else {
-      // Create pruebas.json if it doesn't exist
       fs.writeFileSync(archivoPruebas, "[]");
     }
+
+    const yaExiste = examenes.some(
+      (examen) => examen.nombre.toLowerCase() === nombre.toLowerCase()
+    );
+    if (yaExiste) {
+      return res.status(400).json({ error: "El examen ya existe" });
+    }
+
+    fs.writeFileSync(archivo, JSON.stringify(nuevoExamen, null, 2));
 
     examenes.push({
       nombre,
@@ -57,5 +59,6 @@ router.post("/examenes", async (req, res) => {
     res.status(500).json({ error: "Error al crear el examen" });
   }
 });
+
 
 module.exports = router;

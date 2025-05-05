@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lista de Exámenes</title>
         <link rel="stylesheet" href="/css/lista-examenes.css" />
-        <!-- <link rel="stylesheet" href="../public/css/lista-examenes.css"> -->
-    </head>
+        <link rel="stylesheet" href="../public/css/lista-examenes.css" />
+        </head>
     <body>
         <header>
             <h1><a href="/" class="logo">TC</a></h1>
@@ -17,12 +17,50 @@
 
         <div class="container active">
             <h1>EXAMENES DISPONIBLES</h1>
-            <div id="examenes-lista" class="examenes-grid"></div>
+
+            <div id="examenes-lista" class="examenes-grid">
+                <div class="examen-card">
+                    <img src="../public/images/no-imagen.jpg" alt="" class="img-examen">
+                    <div class="info">
+                        <div class="examen-container-info examen-container-1">
+                            <div class="examen-info examen-titulo">Filosofia</div>
+                            <span class="examen-info examen-estado">Disponible</span>
+                        </div>
+                        <div class="examen-container-info examen-container-2">
+                            <span class="examen-info examen-author">Author: Manuel</span>
+                            <span class="examen-info examen-tipo">Segundo parcial</span>
+                        </div>
+                        <p class="examen-info examen-descripcion">Examen de filosofia donde hablamos de Rene descartes.</p>
+                    </div>
+                </div>
+                <div class="examen-card">
+                    <img src="../public/images/no-imagen.jpg" alt="" class="img-examen">
+                    <div class="info">
+                        <div class="examen-container-info examen-container-1">
+                            <div class="examen-info examen-titulo">Filosofia</div>
+                            <span class="examen-info examen-estado">Disponible</span>
+                        </div>
+                        <div class="examen-container-info examen-container-2">
+                            <span class="examen-info examen-author">Author: Manuel</span>
+                            <span class="examen-info examen-tipo">Segundo parcial</span>
+                        </div>
+                        <p class="examen-info examen-descripcion">Examen de filosofia donde hablamos de Rene descartes.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <div class="examenes desactived">
             <h1 class="exam-title">Examen</h1>
+            
         </div>
+
+        <div class="exam-card">
+            
+        </div>
+
+        
         <script src="/socket.io/socket.io.js"></script>
 
         <script src="/JS/lista-examenes.js"></script>

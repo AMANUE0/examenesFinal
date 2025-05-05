@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function renderExamen(examen) {
+function renderExamen(examenNombre) {
     const containerExams = document.querySelector(".examenes");
     const container = document.querySelector(".container");
     const examTitle = document.querySelector(".exam-title");
     const volverBtn = document.querySelector(".volver-btn");
 
-    examTitle.innerHTML = "Examen de " + examen;
+    examTitle.innerHTML = "Examen de " + examenNombre;
 
     container.classList.remove("active");
     container.classList.add("desactived");
@@ -38,13 +38,13 @@ function renderExamen(examen) {
 
     volverBtn.classList.remove("desactived");
 
-    fetch(`/examenes/${examen}.json`)
+    fetch(`/examenes/${examenNombre}.json`)
         .then((res) => res.json())
         .then((data) => {
-            const preguntas = data.preguntas;
+            const preguntas = data; // Ahora el JSON del examen es un array directamente
             const examenContenedor = document.querySelector(".examenes");
 
-            examenContenedor.innerHTML = `<h1 class="exam-title">Examen de ${examen}</h1>`;
+            examenContenedor.innerHTML = `<h1 class="exam-title">Examen de ${examenNombre}</h1>`;
 
             aciertos = 0;
             totalPreguntas = preguntas.length;
@@ -126,7 +126,6 @@ function mostrarResultado() {
         <h2 class="result-h2">Resultado final</h2>
         <p class="aciertos">Aciertos: ${aciertos} / ${totalPreguntas}</p>
     `;
-
     examenContenedor.appendChild(resultado);
 
     if (aciertos === totalPreguntas) {
@@ -152,16 +151,29 @@ async function cargarExamenes() {
 
         examenes.forEach((examen) => {
             const card = document.createElement("div");
+            const img = document.createElement("img");
+            img.src = "/images/no-imagen.jpg";
             card.className = "examen-card";
             card.innerHTML = `
-                <div class="examen-titulo">${examen.nombre}</div>
-                <div class="examen-info">Archivo: ${examen.archivo}</div>
+
+            <img src="/images/no-imagen.jpg" alt="" class="img-examen">
+            <div class="info">
+                <div class="examen-container-info examen-container-1">
+                    <div class="examen-info examen-titulo">${examen.nombre}</div>
+                    <span class="examen-info examen-estado">${examen.estado}</span>
+                </div>
+
+                <div class="examen-container-info examen-container-2">
+                    <span class="examen-info examen-author">Author: ${examen.autor}</span>
+                    <span class="examen-info examen-tipo">${examen.etapa}</span>
+                </div>
+                <p class="examen-info examen-descripcion">${examen.descripcion}</p>
+            </div>
             `;
             card.style.cursor = "pointer";
             card.addEventListener("click", () => {
-                const nombreExamen =
-                    card.querySelector(".examen-titulo").textContent;
-                renderExamen(nombreExamen);
+                const nombreExamen = examen.nombre; // Usar el nombre del objeto
+                renderExamen(nombreExamen); // La función renderExamen sigue esperando el nombre del archivo sin la extensión
             });
             contenedor.prepend(card);
         });
@@ -170,5 +182,19 @@ async function cargarExamenes() {
     }
 }
 
-
 const socket = io();
+
+{/* <div class="examen-card">
+<img src="../public/images/no-imagen.jpg" alt="" class="img-examen">
+<div class="info">
+    <div class="examen-container-info examen-container-1">
+        <div class="examen-info examen-titulo">Filosofia</div>
+        <span class="examen-info examen-estado">Disponible</span>
+    </div>
+    <div class="examen-container-info examen-container-2">
+        <span class="examen-info examen-author">Author: Manuel</span>
+        <span class="examen-info examen-tipo">Segundo parcial</span>
+    </div>
+    <p class="examen-info examen-descripcion">Examen de filosofia donde hablamos de Rene descartes.</p>
+</div>
+</div> */}

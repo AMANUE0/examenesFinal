@@ -1,3 +1,5 @@
+console.log("Comunidad");
+
 const btnAgregarOpinion = document.querySelector(".btn-agregar-opinion");
 const btnCerrarForm = document.querySelector(".btn-cerrar-form");
 
@@ -64,3 +66,5 @@ fetch("admin/mensajes")
 
 let fecha = new Date().toLocaleDateString();
 console.log(fecha);
+
+
